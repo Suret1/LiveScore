@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "850588597543",
+    "project_id": "live-score-2986c",
+    "storage_bucket": "live-score-2986c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:850588597543:android:4357ff64f1178b20a37d02",
+        "android_client_info": {
+          "package_name": "com.suret.livescore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "850588597543-1jgqtfpl0la5vnhijhakl282f8nusd2b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.suret.livescore",
+            "certificate_hash": "66684d5ccaa355a9fd3449fe391005703b8e2848"
+          }
+        },
+        {
+          "client_id": "850588597543-hdj3ie6qorvm93n9te1sk2conufruj2q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKRaoPVUV2kuwFC3QqSEnsRuf6KoJAyck"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "850588597543-hdj3ie6qorvm93n9te1sk2conufruj2q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

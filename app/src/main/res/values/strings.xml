@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LiveScore</string>
+    <string name="discover_all_about_sport">Discover all about sport</string>
+    <string name="entry_description">Search millions of jobs and get the inside scoop on companies.
+Wait for what? Let’s get start it!</string>
+    <string name="sign_in">Sign in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="welcome">Welcome</string>
+    <string name="email">Email</string>
+</resources>
