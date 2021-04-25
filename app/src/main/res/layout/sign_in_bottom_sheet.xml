@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/login_bottom_sheet"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bottom_sheet_bg">
+    android:background="@drawable/bottom_sheet_bg"
+    android:paddingBottom="50dp">
 
     <ImageView
         android:id="@+id/line"
@@ -19,13 +19,10 @@
 
     <TextView
         android:id="@+id/welcome_tv"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/TextViewBold"
         android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/source_sans_pro_semibold"
         android:text="@string/welcome"
-        android:textColor="@color/white"
         android:textSize="28sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/line" />
@@ -45,5 +42,96 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/welcome_tv" />
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:drawableStart="@drawable/password"
+        android:drawableEnd="@drawable/password_hide"
+        android:drawablePadding="10dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_edit_text" />
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="26dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password_edit_text">
+
+
+        <ImageView
+            android:id="@+id/checkbox_IW"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            app:srcCompat="@drawable/checkbox" />
+
+        <TextView
+            style="@style/TextViewRegular"
+            android:layout_width="wrap_content"
+            android:layout_weight="1.2"
+            android:text="@string/remember_me" />
+
+        <TextView
+            style="@style/TextViewRegular"
+            android:layout_width="wrap_content"
+            android:text="@string/forgot_password"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sign_in__btn_bottom_sheet"
+        style="@style/BlueButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="40dp"
+        android:padding="20dp"
+        android:text="@string/sign_in"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/bottom_sheet_linear_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sign_in__btn_bottom_sheet">
+
+        <TextView
+            style="@style/TextViewRegular"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/dont_have_account"
+            android:textColor="@color/color_silver" />
+
+        <TextView
+            style="@style/TextViewRegular"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:text="@string/sign_up"
+            android:textColor="@color/blue" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

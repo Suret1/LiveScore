@@ -5,9 +5,20 @@
     android:id="@+id/nav_graph"
     app:startDestination="@id/entryFragment">
 
+    <action
+        android:id="@+id/action_to_interestFragment"
+        app:destination="@id/interestFragment"
+        app:enterAnim="@anim/enter_from_right"
+        app:popEnterAnim="@anim/enter_from_left"
+        app:popExitAnim="@anim/exit_to_right" />
     <fragment
         android:id="@+id/entryFragment"
         android:name="com.suret.livescore.ui.entry.EntryFragment"
         android:label="fragment_entry"
         tools:layout="@layout/fragment_entry" />
+    <fragment
+        android:id="@+id/interestFragment"
+        android:name="com.suret.livescore.interest.InterestFragment"
+        android:label="fragment_interest"
+        tools:layout="@layout/fragment_interest" />
 </navigation>

@@ -7,4 +7,20 @@ Wait for what? Let’s get start it!</string>
     <string name="sign_up">Sign up</string>
     <string name="welcome">Welcome</string>
     <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="dont_have_account">Don\'t have account?</string>
+    <string name="what_sport_do_you_interest">What sport do \nyou interest?</string>
+    <string name="u_can_choose_more">You can choose more than one</string>
+    <string name="continue_">Continue</string>
+    <string name="skip">Skip</string>
+    <string name="soccer">Soccer</string>
+    <string name="basketball">Basketball</string>
+    <string name="tennis">Tennis</string>
+    <string name="baseball">Baseball</string>
+    <string name="football">Football</string>
+    <string name="volleyball">Volleyball</string>
+
+
 </resources>

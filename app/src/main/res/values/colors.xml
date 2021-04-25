@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background_color">#181829</color>
     <color name="mid_grey">#65656B</color>
-    <color name="blue_button">#246BFD</color>
+    <color name="blue">#246BFD</color>
     <color name="steel_gray">#222232</color>
+    <color name="color_silver">#C4C4C4</color>
 </resources>
