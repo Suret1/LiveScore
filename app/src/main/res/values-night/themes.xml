@@ -3,7 +3,7 @@
     <style name="Theme.LiveScore" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/steel_gray</item>
+        <item name="colorPrimaryVariant">@color/background_color</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -16,6 +16,17 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <style name="Style.AppBarLayout" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="colorPrimary">@color/mid_grey</item>
+        <item name="colorPrimaryVariant">@color/mid_grey</item>
+        <item name="colorOnPrimary">@color/mid_grey</item>
+        <!--         Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+    </style>
     <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
         <item name="bottomSheetStyle">@style/AppModalStyle</item>
 

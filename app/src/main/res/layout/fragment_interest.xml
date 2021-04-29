@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_color"
-    tools:context=".interest.InterestFragment">
+    tools:context=".ui.interest.InterestFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -39,6 +39,7 @@
             tools:listitem="@layout/interest_layout" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/sign_in__btn_interest"
             style="@style/BlueButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,6 +48,7 @@
             android:text="@string/continue_" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/skip_btn_interest"
             style="@style/SimpleButtonStyle"
             android:layout_gravity="center"
             android:layout_marginHorizontal="24dp"
