@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sign_in_bottom_sheet"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bottom_sheet_bg"
@@ -41,8 +42,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/welcome_tv">
 
-        <EditText
-            android:id="@+id/email_edit_text"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/email_edit_text_sign_in"
             style="@style/EditTextStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -64,10 +65,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/email_text_input_layout"
         app:passwordToggleEnabled="true"
+
         app:passwordToggleTint="@color/mid_grey">
 
-        <EditText
-            android:id="@+id/password_edit_text"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password_edit_text_sign_in"
             style="@style/EditTextStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -92,7 +94,7 @@
         <androidx.appcompat.widget.AppCompatCheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:buttonTint="@color/mid_grey"/>
+            android:buttonTint="@color/mid_grey" />
 
         <TextView
             style="@style/TextViewRegular"
@@ -139,7 +141,7 @@
             android:textColor="@color/color_silver" />
 
         <TextView
-            android:id="@+id/sign_up_bottom_sheet"
+            android:id="@+id/sign_up_btn"
             style="@style/TextViewRegular"
             android:layout_width="wrap_content"
             android:layout_gravity="center"

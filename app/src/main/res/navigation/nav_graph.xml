@@ -27,7 +27,36 @@
             app:popExitAnim="@anim/exit_to_right"
             app:popUpTo="@navigation/nav_graph"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_entry_to_sign_bottom_sheet"
+            app:destination="@id/sign_in_bottom_sheet"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+        <action
+            android:id="@+id/action_entry_to_register_bottom_sheet"
+            app:destination="@id/sign_up_bottom_sheet"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
     </fragment>
+
+    <dialog
+        android:id="@+id/sign_in_bottom_sheet"
+        android:name="com.suret.livescore.ui.login.LoginBottomSheet">
+        <action
+            android:id="@+id/action_sign_in_bottom_sheet_to_sign_up_bottom_sheet"
+            app:destination="@id/sign_up_bottom_sheet"
+            app:enterAnim="@anim/enter_from_right"
+            app:exitAnim="@anim/exit_to_left"
+            app:popEnterAnim="@anim/enter_from_left"
+            app:popExitAnim="@anim/exit_to_right" />
+    </dialog>
+    <dialog
+        android:id="@+id/sign_up_bottom_sheet"
+        android:name="com.suret.livescore.ui.register.RegisterBottomSheet" />
     <fragment
         android:id="@+id/interestFragment"
         android:name="com.suret.livescore.ui.interest.InterestFragment"
@@ -41,7 +70,7 @@
             app:launchSingleTop="true"
             app:popEnterAnim="@anim/enter_from_left"
             app:popExitAnim="@anim/exit_to_right"
-            app:popUpTo="@navigation/nav_graph"
+            app:popUpTo="@id/nav_graph"
             app:popUpToInclusive="true" />
     </fragment>
     <fragment
