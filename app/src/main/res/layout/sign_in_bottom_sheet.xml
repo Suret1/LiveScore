@@ -17,6 +17,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/line" />
 
+    <include
+        android:id="@+id/progressbar_signIn"
+        layout="@layout/progressbar_layout"
+        android:visibility="gone" />
 
     <TextView
         android:id="@+id/welcome_tv"
@@ -65,7 +69,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/email_text_input_layout"
         app:passwordToggleEnabled="true"
-
         app:passwordToggleTint="@color/mid_grey">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -92,6 +95,7 @@
 
 
         <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/rememberCheckBox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="@color/mid_grey" />

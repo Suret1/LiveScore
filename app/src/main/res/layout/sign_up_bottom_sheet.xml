@@ -18,6 +18,15 @@
         app:srcCompat="@drawable/line" />
 
 
+    <include
+        android:id="@+id/progressBar_signUp"
+        layout="@layout/progressbar_layout"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/sign_up_tv"
         style="@style/TextViewBold"

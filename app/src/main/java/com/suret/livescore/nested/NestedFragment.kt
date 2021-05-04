@@ -20,6 +20,8 @@ class NestedFragment : Fragment(R.layout.fragment_nested) {
         bottom_nav_menu.setupWithNavController(navController)
 
         bottom_nav_menu.setOnNavigationItemReselectedListener { }
+
+
     }
 
 }

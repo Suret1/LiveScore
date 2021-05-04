@@ -25,7 +25,7 @@
             app:launchSingleTop="true"
             app:popEnterAnim="@anim/enter_from_left"
             app:popExitAnim="@anim/exit_to_right"
-            app:popUpTo="@navigation/nav_graph"
+            app:popUpTo="@id/nav_graph"
             app:popUpToInclusive="true" />
         <action
             android:id="@+id/action_entry_to_sign_bottom_sheet"
@@ -78,9 +78,8 @@
         android:name="com.suret.livescore.nested.NestedFragment"
         android:label="fragment_nested"
         app:launchSingleTop="true"
-        app:popUpTo="@navigation/nav_graph"
+        app:popUpTo="@id/nav_graph"
         app:popUpToInclusive="true"
         tools:layout="@layout/fragment_home" />
-
 
 </navigation>
