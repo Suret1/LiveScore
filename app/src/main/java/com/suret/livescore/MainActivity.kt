@@ -45,7 +45,6 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(this, "Signed out", Toast.LENGTH_SHORT).show()
                 }
             } catch (e: Exception) {
-
             }
         }
 
